@@ -85,7 +85,7 @@ Results
 
 The models were evaluated based on accuracy scores using both CountVectorizer and TF-IDF.
 
-Model
+Model:
 
 Accuracy (CountVectorizer)
 
@@ -93,30 +93,30 @@ Accuracy (TF-IDF)
 
 Logistic Regression
 
-0.9754
+- 0.9754 (CountVectorizer)
 
-0.9721
+- 0.9721 (TF-IDF)
 
 Naive Bayes
 
-0.9839 (Best)
+- 0.9839 (Best) (CountVectorizer)
 
-0.9732
+- 0.9732 (TF-IDF)
 
 Random Forest
 
-0.9705
+- 0.9705 (CountVectorizer)
 
-0.9658
+- 0.9658 (TF-IDF)
 
 SVM
 
-0.9792
+- 0.9792 (CountVectorizer)
 
-0.9785 (Best)
+- 0.9785 (Best) (TF-IDF)
 
 Best Models:
 
-Naive Bayes performed best with CountVectorizer (Accuracy: 98.39%)
+- Naive Bayes performed best with CountVectorizer (Accuracy: 98.39%)
 
-SVM performed best with TF-IDF (Accuracy: 97.85%)
+- SVM performed best with TF-IDF (Accuracy: 97.85%)
