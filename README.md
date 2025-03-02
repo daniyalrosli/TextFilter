@@ -120,3 +120,7 @@ Best Models:
 - Naive Bayes performed best with CountVectorizer (Accuracy: 98.39%)
 
 - SVM performed best with TF-IDF (Accuracy: 97.85%)
+
+Deployment
+
+The trained model was converted into a FastAPI web service for real-time spam classification. The API allows users to submit SMS messages and get instant predictions on whether a message is spam or ham.
