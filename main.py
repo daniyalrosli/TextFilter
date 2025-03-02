@@ -22,12 +22,11 @@ def home():
 
 @app.post("/predict")
 def predict_spam(data: Message):
-    # Transform input text using the vectorizer
-    text_vectorized = vectorizer.transform([data.text])
-
-    # Make a prediction
-    prediction = model.predict(text_vectorized)[0]
-
-    # Return result
-    return {"message": data.text, "is_spam": bool(prediction)}
-
+    # Transform the input text
+    text_vectorized = vectorizer.transform([message.text])
+    
+    # Make prediction
+    prediction = model.predict(text_vectorized)
+    
+    # Return response
+    return {"text": Message.text, "prediction": "Spam" if prediction[0] == 1 else "Ham"}
